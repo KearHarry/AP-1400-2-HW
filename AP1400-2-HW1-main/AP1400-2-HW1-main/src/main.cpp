@@ -1,12 +1,16 @@
-
 #include <iostream>
-#include <gtest/gtest.h>
 #include "hw1.h"
-
+#include "gtest/gtest.h"
+using namespace algebra;
 int main(int argc, char **argv)
 {
-    if (true) // make false to run unit-tests
+    if (false) // make false to run unit-tests
     {
+        Matrix m = algebra::zeros(2, 2);
+        algebra::show(m); 
+        
+        Matrix s = algebra::sum(m, 1.0);
+        algebra::show(s); 
         // debug section
     }
     else
