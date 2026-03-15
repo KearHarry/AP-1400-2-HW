@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "_deps/googletest-build",
+		"source" : "D:/Project/C++/AP-1400-2-HW/AP1400-2-HW3-main/googletest-1.14.0"
+	}
+}
