@@ -15,6 +15,7 @@ public:
         return units;
     }
     virtual std::string get_name() = 0; // 纯虚函数
+    virtual Ingredient* clone() const = 0; // 纯虚克隆方法，派生类需实现
 
     double price() {
         // TODO: 计算并返回总价 (price_unit * units)

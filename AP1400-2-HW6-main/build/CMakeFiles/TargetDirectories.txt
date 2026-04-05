@@ -1,0 +1,13 @@
+D:/Project/C++/AP-1400-2-HW/AP1400-2-HW6-main/build/CMakeFiles/main.dir
+D:/Project/C++/AP-1400-2-HW/AP1400-2-HW6-main/build/CMakeFiles/edit_cache.dir
+D:/Project/C++/AP-1400-2-HW/AP1400-2-HW6-main/build/CMakeFiles/rebuild_cache.dir
+D:/Project/C++/AP-1400-2-HW/AP1400-2-HW6-main/build/_deps/googletest-build/CMakeFiles/edit_cache.dir
+D:/Project/C++/AP-1400-2-HW/AP1400-2-HW6-main/build/_deps/googletest-build/CMakeFiles/rebuild_cache.dir
+D:/Project/C++/AP-1400-2-HW/AP1400-2-HW6-main/build/_deps/googletest-build/googlemock/CMakeFiles/gmock.dir
+D:/Project/C++/AP-1400-2-HW/AP1400-2-HW6-main/build/_deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir
+D:/Project/C++/AP-1400-2-HW/AP1400-2-HW6-main/build/_deps/googletest-build/googlemock/CMakeFiles/edit_cache.dir
+D:/Project/C++/AP-1400-2-HW/AP1400-2-HW6-main/build/_deps/googletest-build/googlemock/CMakeFiles/rebuild_cache.dir
+D:/Project/C++/AP-1400-2-HW/AP1400-2-HW6-main/build/_deps/googletest-build/googletest/CMakeFiles/gtest.dir
+D:/Project/C++/AP-1400-2-HW/AP1400-2-HW6-main/build/_deps/googletest-build/googletest/CMakeFiles/gtest_main.dir
+D:/Project/C++/AP-1400-2-HW/AP1400-2-HW6-main/build/_deps/googletest-build/googletest/CMakeFiles/edit_cache.dir
+D:/Project/C++/AP-1400-2-HW/AP1400-2-HW6-main/build/_deps/googletest-build/googletest/CMakeFiles/rebuild_cache.dir

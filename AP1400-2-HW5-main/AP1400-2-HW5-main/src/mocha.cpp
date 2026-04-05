@@ -5,11 +5,22 @@
 Mocha::Mocha() {
     this->name = "Mocha";
     // 记得往 ingredients 加入对应的 new XXX(...)
+    ingredients.push_back(new Espresso(2));
+    ingredients.push_back(new Milk(2));
+    ingredients.push_back(new MilkFoam(1));
+    ingredients.push_back(new Chocolate(1));
 }
 
 // TODO: 深拷贝（记得同时处理父类的 ingredients 和当前类的 side_items）
 Mocha::Mocha(const Mocha& cap) : EspressoBased(cap) {
     // 还需要深拷贝 side_items
+    for(const auto& i : cap.side_items)
+        side_items.push_back(i->clone());
+    this->name = cap.name;
+    for (size_t i = 0; i < cap.ingredients.size(); i++)
+    {
+        ingredients.push_back(cap.ingredients[i]->clone());
+    }
 }
 
 // TODO: 析构时清理 side_items
@@ -24,6 +35,13 @@ void Mocha::operator=(const Mocha& cap) {
     if (this == &cap) return;
     EspressoBased::operator=(cap);
     // 清理并在新赋值时拷贝 side_items
+    for(const auto& i : side_items)
+        delete i;
+    side_items.clear();
+    for (size_t i = 0; i < cap.side_items.size(); i++)    {
+        side_items.push_back(cap.side_items[i]->clone());
+    }
+     this->name = cap.name;
 }
 
 // TODO: 返回名字
@@ -35,11 +53,16 @@ std::string Mocha::get_name() {
 double Mocha::price() {
     double total = 0.0;
     // 累加 ingredients 和 side_items
+    for(auto& i : ingredients)
+        total += i->price();
+    for(auto& i : side_items)
+        total += i->price();
     return total;
 }
 
 // TODO: 增加配菜
 void Mocha::add_side_item(Ingredient* side) {
+    side_items.push_back(side);
     // 压入 side_items
 }
 

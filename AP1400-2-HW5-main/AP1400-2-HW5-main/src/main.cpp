@@ -8,9 +8,16 @@
 
 int main(int argc, char **argv)
 {
-    if (false) // make false to run unit-tests
+    if (1) // make false to run unit-tests
     {
-        // debug section
+        Cappuccino* cappuccino = new Cappuccino();
+        cappuccino->brew();
+        std::cout << cappuccino->get_name() << " costs " << cappuccino->price() << std::endl;
+        delete cappuccino;
+        Mocha* mocha = new Mocha();
+        mocha->brew();
+        std::cout << mocha->get_name() << " costs " << mocha->price() << std::endl;
+        delete mocha;
         
     }
     else
